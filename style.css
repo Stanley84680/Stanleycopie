@@ -1,0 +1,104 @@
+{
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    height: 100vh;
+    background: linear-gradient(#00000066, #000000ad), fixed url(../asset/im1.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+header nav {
+    text-align: right;
+    padding: 20px;
+    position: relative;
+}
+
+header nav .logo {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    transform: translate(-35%, -15%);
+}
+
+header nav .logo h3 {
+    letter-spacing: 3px;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    opacity: 1;
+    color: #000000ad;
+    font-style: italic;
+}
+
+header nav .lien {
+    padding-top: 10px;
+}
+
+header nav .lien a {
+    padding: 15px;
+    padding-left: 20px;
+    text-decoration: none;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #000000ba;
+    font-size: 27px;
+    transition: all 0.5s ease;
+}
+
+header nav .lien a:hover {
+    color: #ffffff94;
+    text-decoration: underline rgba(255, 0, 0, 0.411);
+}
+
+header main {
+    position: relative;
+}
+
+header main .text.first-text {
+    color: white;
+}
+
+header main .text.second-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 30%;
+    backdrop-filter: blur(2px);
+    border-left: 2px solid rgba(0, 0, 255, 0.575);
+    animation: animate 4s steps(12) infinite;
+}
+
+header main span {
+    font-size: 19px;
+}
+
+@keyframes animate {
+    40%, 60% {
+        left: 22%;
+        width: 0;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+header section {
+    position: absolute;
+    top: 60%;
+    left: 55%;
+    transform: translate(-60%, -55%);
+    text-align: center;
+}
+
+header section .mot {
+    margin: 10px;
+    font-size: 50px;
+    font-style: italic;
+}
